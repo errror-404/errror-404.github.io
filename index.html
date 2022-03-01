@@ -4,15 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Pasteleria</title>
   </head>
   <body>
     <div class="uk-position-relative">
       <img src="images/light.jpg" alt="" />
       <div class="uk-position-top">
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <nav
+          class="uk-navbar-container"
+          uk-navbar
+          style="background-color: pink"
+        >
           <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="#">Active</a></li>
+              <a class="uk-navbar-item uk-logo navLink" href="#">Logo</a>
+              <li class="uk-active navLink"><a href="#">Active</a></li>
               <li><a href="#">Item</a></li>
               <li>
                 <a href="#">Parent</a>
@@ -32,6 +44,21 @@
           </div>
         </nav>
       </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <h1 class="uk-container">Sabores de pasteles</h1>
+    <div
+      class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-5@s uk-margin"
+      uk-grid
+    >
+      <div class="uk-card-media-left">
+        <img
+          src="https://assets.kraftfoods.com/recipe_images/Strawberry_Secret_Tunnel_Cake.jpg"
+          alt=""
+        />
+        <canvas width="600" height="400"></canvas>
+      </div>
+      <div></div>
     </div>
   </body>
 </html>
