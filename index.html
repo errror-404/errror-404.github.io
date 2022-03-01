@@ -8,35 +8,35 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="./css/index.css" />
 
     <title>Pasteleria</title>
   </head>
   <body>
+    <!-- Aqui comienza el navbar -->
     <div class="uk-position-relative">
       <img src="images/light.jpg" alt="" />
       <div class="uk-position-top">
-        <nav
-          class="uk-navbar-container"
-          uk-navbar
-          style="background-color: pink"
-        >
+        <nav class="uk-navbar-container" uk-navbar>
           <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="#">Pasteleria</a>
+          </div>
+          <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
-              <a class="uk-navbar-item uk-logo navLink" href="#">Logo</a>
-              <li class="uk-active navLink"><a href="#">Activ</a></li>
-              <li><a href="#">Item</a></li>
+              <li class="uk-active navLink"><a href="#">Inicio</a></li>
+              <li><a href="#">Precios</a></li>
               <li>
-                <a href="#">Parent</a>
+                <a href="#">Menu</a>
                 <div class="uk-navbar-dropdown">
                   <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li class="uk-nav-header">Header</li>
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Item</a></li>
+                    <li class="uk-active navLink"><a href="#">Sabores</a></li>
+                    <li><a href="#">Adornos</a></li>
+                    <li><a href="#">Combinaciones</a></li>
+                    <li><a href="#">Panaderia</a></li>
                     <li class="uk-nav-divider"></li>
-                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Contactanos</a></li>
                   </ul>
                 </div>
               </li>
@@ -45,20 +45,65 @@
         </nav>
       </div>
     </div>
-    <canvas id="canvas"></canvas>
-    <h1 class="uk-container">Sabores de pasteles</h1>
+    <!-- aqui termina el navbar -->
+    <!-- Aqui comienza la slider de portada -->
+    <canvas width="600" height="55"></canvas>
     <div
-      class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-5@s uk-margin"
-      uk-grid
+      class="uk-position-relative uk-visible-toggle uk-light"
+      tabindex="-1"
+      uk-slideshow="autoplay: true;autoplay-interval: 3000"
     >
-      <div class="uk-card-media-left">
-        <img
-          src="https://assets.kraftfoods.com/recipe_images/Strawberry_Secret_Tunnel_Cake.jpg"
-          alt=""
-        />
-        <canvas width="600" height="400"></canvas>
-      </div>
-      <div></div>
+      <ul class="uk-slideshow-items">
+        <li>
+          <img
+            src="https://static.wixstatic.com/media/05d9e49e0b914b2092aef7fd8d26bbcc.jpg/v1/fit/w_891,h_717,q_90/05d9e49e0b914b2092aef7fd8d26bbcc.webp"
+            alt=""
+            uk-cover
+          />
+          <div
+            class="uk-position-center-left uk-position-small uk-text-uk-text-left uk-light uk-text-break uk-text-large"
+          >
+            <h2 class="uk-margin-remove uk-text-bold">100% Natural</h2>
+            <p class="uk-margin-remove">
+              TODO CASERO, NATURAL,<br />
+              SIN GLUTE Y RECIEN HECHO.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://static.wixstatic.com/media/24536d_d0d76b6d42f744329fdb1ecfd1db08bf~mv2.jpg/v1/fill/w_1260,h_700,fp_0.85_0.39,q_90/24536d_d0d76b6d42f744329fdb1ecfd1db08bf~mv2.webp"
+            alt=""
+            uk-cover
+          />
+          <div
+            class="uk-position-center-left uk-position-small uk-text-uk-text-left uk-light uk-text-break uk-text-large"
+          >
+            <h2 class="uk-margin-remove uk-text-bold">100% Natural</h2>
+            <p class="uk-margin-remove">
+              TODO CASERO, NATURAL,<br />
+              SIN GLUTE Y RECIEN HECHO.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://static.wixstatic.com/media/24536d_aeaa9f0284a04d90b3f9893294ed504e~mv2.jpg/v1/fill/w_1260,h_700,q_90/24536d_aeaa9f0284a04d90b3f9893294ed504e~mv2.webp"
+            alt=""
+            uk-cover
+          />
+          <div
+            class="uk-position-center-left uk-position-small uk-text-uk-text-left uk-light uk-text-break uk-text-large"
+          >
+            <h2 class="uk-margin-remove uk-text-bold">100% Natural</h2>
+            <p class="uk-margin-remove">
+              TODO CASERO, NATURAL,<br />
+              SIN GLUTE Y RECIEN HECHO.
+            </p>
+          </div>
+        </li>
+      </ul>
     </div>
+    <!-- Aqui termina la slider de portada -->
   </body>
 </html>
