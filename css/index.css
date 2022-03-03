@@ -1,4 +1,4 @@
-.navLink {
+.navLink:hover {
   color: purple;
 }
 .uk-navbar-container {
@@ -6,4 +6,45 @@
 }
 .sliderLink {
   color: purple !important;
+}
+
+li a:hover {
+  color: purple !important;
+  border-bottom: 1px solid black;
+}
+
+.uk-active {
+  background: -webkit-linear-gradient(rgb(235, 235, 235), rgb(172, 14, 235));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer {
+  width: 1260px;
+  height: 250px;
+  margin: 0 auto;
+  background: #fbf2f7;
+}
+
+.footer a {
+  color: rgb(255, 159, 223);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  border-bottom: 0.5px solid rgb(238, 33, 170);
+  border-width: thin;
+}
+
+.footer span {
+  background: -webkit-linear-gradient(rgb(235, 235, 235), rgb(240, 47, 47));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer img {
+  height: 250px;
+  width: 350px;
 }

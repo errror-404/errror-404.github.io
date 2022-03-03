@@ -20,28 +20,22 @@
       class="uk-position-relative"
       style="width: 1260px; height: 80px; margin: 0 auto"
     >
-      <div class="uk-position-top">
+      <div class="uk-position-top uk-navbar-container">
         <nav class="uk-navbar-container" uk-navbar>
           <div class="uk-navbar-left">
-            <a class="uk-navbar-item uk-logo" href="#">Pasteleria</a>
+            <a class="uk-navbar-item uk-logo" href="./index.html"
+              ><img
+                src="./imagenes/logo-horizontal.png"
+                style="height: 50px; width: 210px"
+            /></a>
           </div>
           <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
-              <li class="uk-active navLink"><a href="#">Inicio</a></li>
-              <li><a href="#">Precios</a></li>
-              <li>
-                <a href="#">Menu</a>
-                <div class="uk-navbar-dropdown">
-                  <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active navLink"><a href="#">Sabores</a></li>
-                    <li><a href="#">Adornos</a></li>
-                    <li><a href="#">Combinaciones</a></li>
-                    <li><a href="#">Panaderia</a></li>
-                    <li class="uk-nav-divider"></li>
-                    <li><a href="#">Contactanos</a></li>
-                  </ul>
-                </div>
-              </li>
+              <li><a class="uk-active" href="./index.html">Inicio</a></li>
+              <li><a href="#sabores">Sabores</a></li>
+              <li><a href="#adornos">Adornos</a></li>
+              <li><a href="#form">Contactanos</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
             </ul>
           </div>
         </nav>
@@ -134,17 +128,18 @@
         Conoce nuestros sabores
       </h1>
       <span class="uk-text-lead uk-text-default"
-        >Contamos con gran variedad de sabores</span
+        >Contamos con una gran variedad de sabores</span
       >
     </div>
 
     <!-- Titulo de sabores -->
     <!-- primera seccion de sabores -->
-    <div class="uk-text-center uk-flex uk-flex-center" uk-grid>
+    <div id="sabores" class="uk-text-center uk-flex uk-flex-center" uk-grid>
       <div class="uk-width-1-4">
         <div class="uk-card uk-card-default uk-card-body">
           <img src="./imagenes/sabor-fresa.jpg" alt="Pastel sabor fresa" />
           <p>Pastel sabor fresa</p>
+          <p class="uk-text-center">precio: $350.00</p>
         </div>
       </div>
       <div class="uk-width-1-4">
@@ -154,6 +149,7 @@
             alt="Pastel sabor chocolate"
           />
           <p>Pastel sabor chocolate</p>
+          <p class="uk-text-center">precio: $300.00</p>
         </div>
       </div>
       <div class="uk-width-1-4">
@@ -163,6 +159,7 @@
             alt="Pastel sabor vainilla"
           />
           <p>Pastel sabor vainilla</p>
+          <p class="uk-text-center">precio: $200.00</p>
         </div>
       </div>
     </div>
@@ -177,6 +174,7 @@
             alt="Pastel sabor naranja limon"
           />
           <p>Pastel sabor naranja limon</p>
+          <p class="uk-text-center">precio: $350.00</p>
         </div>
       </div>
       <div class="uk-width-1-4">
@@ -186,17 +184,240 @@
             alt="Pastel sabor frutos rojos"
           />
           <p>Pastel sabor frutos rojos</p>
+          <p class="uk-text-center">precio: $400.00</p>
         </div>
       </div>
       <div class="uk-width-1-4">
         <div class="uk-card uk-card-default uk-card-body">
           <img src="./imagenes/sabor-mora.jpg" alt="Pastel sabor mora azul" />
           <p class="uk-text-default">Pastel sabor mora azul</p>
+          <p class="uk-text-center">precio: $600.00</p>
         </div>
       </div>
     </div>
 
     <!-- Segunda seccion de sabores -->
+
     <!-- Aqui Finalizan los sabores -->
+
+    <!-- Divisor de secciones -->
+    <hr
+      class="uk-divider-icon uk-width-1-3 uk-margin-large-top"
+      style="width: 1260px; margin: 0 auto"
+    />
+    <!-- Divisor de secciones -->
+
+    <!-- aqui Comienzan los adornos -->
+
+    <!-- titulo de adornos -->
+
+    <div id="adornos" class="uk-text-center uk-padding-large">
+      <h1
+        class="uk-heading-primary"
+        style="
+          background: -webkit-linear-gradient(
+            rgb(235, 235, 235),
+            rgb(245, 138, 67)
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        "
+      >
+        No te olvides de nuestros adornos
+      </h1>
+      <span class="uk-text-lead uk-text-default"
+        >Puedes incluir los que quieras en tu pastel</span
+      >
+    </div>
+
+    <!-- titulo de adornos -->
+
+    <!-- seccion de adornos -->
+    <div class="uk-text-center uk-flex uk-flex-center" uk-grid>
+      <div class="uk-width-1-4">
+        <div class="uk-card uk-card-default uk-card-body">
+          <img src="./imagenes/galleta.jpg" alt="Galleta" />
+          <p>Galleta</p>
+          <p class="uk-text-center">precio: $30.00 c/u</p>
+        </div>
+      </div>
+      <div class="uk-width-1-4">
+        <div class="uk-card uk-card-default uk-card-body">
+          <img src="./imagenes/cake-pops.jpg" alt="Cake pops" />
+          <p>Cake pops</p>
+          <p class="uk-text-center">precio: $50.00 c/u</p>
+        </div>
+      </div>
+      <div class="uk-width-1-4">
+        <div class="uk-card uk-card-default uk-card-body">
+          <img src="./imagenes/frutas.jpg" alt="Fruta de la casa" />
+          <p>Fruta de la casa</p>
+          <p class="uk-text-center">precio: $10.00 c/u</p>
+        </div>
+      </div>
+    </div>
+    <!-- seccion de adornos -->
+
+    <!-- aqui finalizan los adornos -->
+
+    <!-- Divisor de secciones -->
+    <hr
+      class="uk-divider-icon uk-width-1-3 uk-margin-large-top"
+      style="width: 1260px; margin: 0 auto"
+    />
+    <!-- Divisor de secciones -->
+
+    <!-- aqui comienza formulario  -->
+
+    <!-- titulo de formulario -->
+
+    <div class="uk-text-center uk-padding-large">
+      <h1
+        class="uk-heading-primary"
+        style="
+          background: -webkit-linear-gradient(
+            rgb(235, 235, 235),
+            rgb(240, 47, 47)
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        "
+      >
+        No esperes mas, confia en nosotros y disfruta de tu pastel
+      </h1>
+      <span class="uk-text-lead uk-text-default"
+        >Llena el siguiente formulario y tu pastel estara a la vuelta de tu
+        casa</span
+      >
+    </div>
+
+    <!-- titulo de formulario -->
+
+    <div
+      id="form"
+      class="uk-card-default"
+      style="width: 1260px; height: 765px; margin: 0 auto"
+    >
+      <div class="uk-card-body">
+        <div class="uk-padding" style="float: left">
+          <img src="./imagenes/logo-vertical.png" style="height: 600px" />
+        </div>
+        <div class="uk-padding">
+          <form>
+            <fieldset class="uk-fieldset">
+              <legend class="uk-legend">CONTACTANOS YA!</legend>
+
+              <div class="uk-margin">
+                <input
+                  class="uk-input"
+                  type="text"
+                  placeholder="Nombre completo"
+                />
+              </div>
+              <div class="uk-margin">
+                <input class="uk-input" type="text" placeholder="Telefono" />
+              </div>
+              <div class="uk-margin">
+                <input
+                  class="uk-input"
+                  type="text"
+                  placeholder="Correo electronico"
+                />
+              </div>
+              <div class="uk-margin">
+                <input
+                  class="uk-input"
+                  type="text"
+                  placeholder="Descripcion general"
+                />
+              </div>
+              <label class="uk-margin uk-text-bold"
+                >Selecciona tus sabores de pastel:</label
+              >
+              <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                <label class="uk-margin-right"
+                  ><input class="uk-checkbox" type="checkbox" checked />
+                  Fresa</label
+                >
+                <label class="uk-margin-right"
+                  ><input class="uk-checkbox" type="checkbox" />
+                  Chocolate</label
+                >
+                <label class="uk-margin-right"
+                  ><input class="uk-checkbox" type="checkbox" /> Vainilla</label
+                >
+                <label class="uk-margin-right"
+                  ><input class="uk-checkbox" type="checkbox" /> Naranja
+                  limon</label
+                >
+                <label class="uk-margin-right"
+                  ><input class="uk-checkbox" type="checkbox" /> Frutos
+                  Rojos</label
+                >
+                <label class="uk-margin-right"
+                  ><input class="uk-checkbox" type="checkbox" /> Mora
+                  azul</label
+                >
+              </div>
+              <label class="uk-margin uk-text-bold"
+                >Selecciona tus adornos de pastel:</label
+              >
+              <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                <label class="uk-margin-right"
+                  ><input class="uk-checkbox" type="checkbox" checked />
+                  Galleta</label
+                >
+                <label class="uk-margin-right"
+                  ><input class="uk-checkbox" type="checkbox" /> Cake
+                  pops</label
+                >
+                <label class="uk-margin-right"
+                  ><input class="uk-checkbox" type="checkbox" /> Fruta de la
+                  casa</label
+                >
+              </div>
+              <div class="uk-flex uk-flex-center uk-padding">
+                <button class="uk-button uk-button-large">Enviar</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- aqui finaliza formulario  -->
+
+    <!-- Aqui comienza footer -->
+
+    <footer class="footer uk-margin-small-bottom">
+      <div class="uk-flex uk-flex-row">
+        <div>
+          <img src="./imagenes/logo-horizontal.png" class="uk-padding-large" />
+        </div>
+        <div class="uk-flex uk-flex-column uk-padding-large">
+          <span>Navegacion</span>
+          <a href="./index.html">Inicio</a>
+          <a href="#sabores">Sabores</a>
+          <a href="#adornos">Adornos</a>
+          <a href="#form">Contacto</a>
+          <a href="./dashboard.html">Dashboard</a>
+        </div>
+        <div class="uk-flex uk-flex-column uk-padding-large">
+          <span>Horario</span>
+          <p>Lun-Vie 7:00 - 22:00</br>Sabado 8:00 - 22:00</br>Domingo 8:00 - 23:00</p>
+        </div>
+        <div class="uk-flex uk-flex-column uk-padding-large">
+          <span>Direccion</span>
+          <p>Av. dummy </br>
+            28021,  dummy</br>
+            Tel: 987-123-456</p>
+        
+        </div>
+      </div>
+    </footer>
+
+    <!-- Aqui Finaliza Footer -->
   </body>
 </html>
