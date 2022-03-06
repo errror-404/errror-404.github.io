@@ -1,9 +1,7 @@
 .navLink:hover {
   color: purple;
 }
-.uk-navbar-container {
-  background-color: white !important;
-}
+
 .sliderLink {
   color: purple !important;
 }
@@ -11,13 +9,6 @@
 li a:hover {
   color: purple !important;
   border-bottom: 1px solid black;
-}
-
-.uk-active {
-  background: -webkit-linear-gradient(rgb(235, 235, 235), rgb(172, 14, 235));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .footer {
