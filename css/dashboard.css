@@ -1,0 +1,15 @@
+button:hover {
+  background-color: green !important;
+  color: white !important;
+}
+
+thead {
+  background-color: #fcf0ff !important;
+}
+th {
+  color: rgb(155, 59, 59) !important;
+}
+
+tr:hover {
+  background-color: #d69c76 !important;
+}

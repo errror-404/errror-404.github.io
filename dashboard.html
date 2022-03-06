@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <nav class="uk-navbar uk-navbar-container uk-margin" uk-navbar>
+      <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+          <li>
+            <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+            <div class="uk-navbar-dropdown">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                <li class="uk-active"><a href="#sabores">Sabores</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#adornos">Adornos</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#pedidos">Pedidos</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="./index.html">Pasteleria</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="uk-flex uk-flex-center">
+      <div class="uk-width-1-2 uk-text-center">
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            Pedidos<br /><br />2 restantes
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="uk-margin uk-text-center" id="sabores">
+      <h3
+        class="uk-heading-primary"
+        style="
+          background: -webkit-linear-gradient(
+            rgb(235, 235, 235),
+            rgb(245, 138, 67)
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        "
+      >
+        Sabores
+      </h3>
+    </div>
+    <table class="uk-table uk-table-middle uk-table-divider uk-card-default">
+      <thead>
+        <tr>
+          <th>Sabor</th>
+          <th>Stock</th>
+          <th>Ubicacion</th>
+          <th>Costo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fresa</td>
+          <td>10</td>
+          <td>Canasta #3</td>
+          <td>$000.00</td>
+        </tr>
+        <tr>
+          <td>Chocolate</td>
+          <td>10</td>
+          <td>Canasta #3</td>
+          <td>$000.00</td>
+        </tr>
+        <tr>
+          <td>Vainilla</td>
+          <td>10</td>
+          <td>Canasta #3</td>
+          <td>$000.00</td>
+        </tr>
+        <tr>
+          <td>Naranja Limon</td>
+          <td>10</td>
+          <td>Canasta #3</td>
+          <td>$000.00</td>
+        </tr>
+        <tr>
+          <td>Frutos Rojos</td>
+          <td>10</td>
+          <td>Canasta #3</td>
+          <td>$000.00</td>
+        </tr>
+        <tr>
+          <td>Mora Azul</td>
+          <td>10</td>
+          <td>Canasta #3</td>
+          <td>$000.00</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="uk-margin uk-text-center" id="adornos">
+      <h3
+        class="uk-heading-primary"
+        style="
+          background: -webkit-linear-gradient(
+            rgb(235, 235, 235),
+            rgb(245, 138, 67)
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        "
+      >
+        Adornos
+      </h3>
+    </div>
+    <table class="uk-table uk-table-middle uk-table-divider uk-card-default">
+      <thead>
+        <tr>
+          <th>Sabor</th>
+          <th>Stock</th>
+          <th>Ubicacion</th>
+          <th>Costo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fresa</td>
+          <td>10</td>
+          <td>Canasta #3</td>
+          <td>$000.00</td>
+        </tr>
+        <tr>
+          <td>Chocolate</td>
+          <td>10</td>
+          <td>Canasta #3</td>
+          <td>$000.00</td>
+        </tr>
+        <tr>
+          <td>Vainilla</td>
+          <td>10</td>
+          <td>Canasta #3</td>
+          <td>$000.00</td>
+        </tr>
+        <tr>
+          <td>Naranja Limon</td>
+          <td>10</td>
+          <td>Canasta #3</td>
+          <td>$000.00</td>
+        </tr>
+        <tr>
+          <td>Frutos Rojos</td>
+          <td>10</td>
+          <td>Canasta #3</td>
+          <td>$000.00</td>
+        </tr>
+        <tr>
+          <td>Mora Azul</td>
+          <td>10</td>
+          <td>Canasta #3</td>
+          <td>$000.00</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="uk-margin uk-text-center" id="pedidos">
+      <h3
+        class="uk-heading-primary"
+        style="
+          background: -webkit-linear-gradient(
+            rgb(235, 235, 235),
+            rgb(245, 138, 67)
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        "
+      >
+        Pedidos
+      </h3>
+    </div>
+    <table class="uk-table uk-table-middle uk-table-divider uk-card-default">
+      <thead>
+        <tr>
+          <th class="uk-width-small">Nombre Completo</th>
+          <th>Telefono</th>
+          <th>Correo Electronico</th>
+          <th>Descripcion</th>
+          <th>Sabores</th>
+          <th>Adornos</th>
+          <th>Precio</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alan Rodriguez Camacho</td>
+          <td>123-456-7890</td>
+          <td>correo@mail.com</td>
+          <td>
+            Pastel de tres pisos, el primero con sabor a fresa, el segundo con
+            sabor a vainilla y por ultimo el tercero con sabor a chocolate
+          </td>
+          <td>Vainilla, Fresa, Chocolate</td>
+          <td>Cake Pops, Galletas, Fruta de la casa</td>
+          <td>$000.00</td>
+          <td>
+            <button class="uk-button uk-button-default" type="button">
+              Finalizado
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Alan Rodriguez Camacho</td>
+          <td>123-456-7890</td>
+          <td>correo@mail.com</td>
+          <td>
+            Pastel de tres pisos, el primero con sabor a fresa, el segundo con
+            sabor a vainilla y por ultimo el tercero con sabor a chocolate
+          </td>
+          <td>Vainilla, Fresa, Chocolate</td>
+          <td>Cake Pops, Galletas, Fruta de la casa</td>
+          <td>$000.00</td>
+          <td>
+            <button class="uk-button uk-button-default" type="button">
+              Finalizado
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
